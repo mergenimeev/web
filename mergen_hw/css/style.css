@@ -655,6 +655,7 @@ li:hover .submenu {
   line-height: 17px;
 }
 
+.footer_about_us,
 .footer_our_support,
 .footer_category,
 .footer_our_account,
@@ -664,7 +665,7 @@ li:hover .submenu {
   box-sizing: border-box;
 }
 
- .footer_our_support {
+.footer_our_support {
   width: 164px;
 }
 
@@ -714,17 +715,31 @@ li:hover .submenu {
   border-width: 0;
 }
 
+.footer_about_us {
+  width: 232px;
+}
+
 .footer_about_us div {
   color: #fff;
   font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .footer_about_us a {
   display: inline-block;
+}
+
+.footer_about_us p {
+  font-family: Roboto;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  padding: 0;
+  margin: 0;
 }
 
 .info_tel {
@@ -755,8 +770,6 @@ li:hover .submenu {
   font-weight: 400;
   float: left;
 }
-
-
 
 .contact_us form {
   margin-left: 11px;
@@ -810,6 +823,45 @@ li:hover .submenu {
   float: left;
 }
 
-.contact_us .contact_info {
-  width: 165px;
+.contact_info {
+  font-family: Roboto;
+  color: #818181;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  float: left;
+  width: 205px;
+  margin-top: 128px;
+  margin-left: 28px;
+}
+
+.contact_us h2 {
+  color: #353535;
+}
+
+.contact_marker {
+  height: 27px;
+}
+ 
+.contact_us img {
+  float: left;
+  margin-right: 10px;
+}
+
+.contact_us .contact_tel a,
+.contact_us .contact_email a {
+  color: #333;
+  font-size: 16px;
+  line-height: 16px;
+  margin-top: 20px;
+}
+
+.contact_us .contact_tel a {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.contact_us .contact_questions {
+  color: #333;
+  font-size: 14px;
 }
