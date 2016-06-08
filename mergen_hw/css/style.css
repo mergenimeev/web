@@ -13,6 +13,17 @@
   margin-bottom: -20px;
 }
 
+.contacts .header {
+  background-image: url(../images/maps.png);
+  background-color: #abeafa;
+  height: 350px;
+  box-sizing: border-box;
+  padding-top: 24px;
+  padding-left: 234px;
+  padding-right: 229px;
+  margin-bottom: 0;
+}
+
 .header_top {
   width: 100%;
   height: 243px;
@@ -29,21 +40,31 @@
 }
 
 .social_small {
-  padding-top: 26px;
+  margin-top: 16px;
+  padding-left: 13px;
+  padding-top: 10px;
+  padding-bottom: 9px;
   float: right;
+  width: 200px;
+  height: 35px;
   box-sizing: border-box;
+  font-size: 0;
 }
+
+.contacts .social_small {
+  background-color: rgba(193, 193, 193, 0.8);
+}
+
 
 .social_small a{
-  display: block;
+  display: inline-block;
   vertical-align: middle;
-  float: left;
   line-height: 16px;
   width: 16px;
-  margin-left: 8px; 
+  margin-left: 11px; 
   box-sizing: border-box;
+  text-align: center;
 }
-
 .header_bottom {
   width: 100%;
   padding-left: 165px;
@@ -290,6 +311,8 @@ li:hover .submenu {
   height: 230px;
   background-color: #eaeaea;
   display: block;
+  margin: 0;
+  padding: 0;
 }
 
 .products_name {
@@ -311,6 +334,7 @@ li:hover .submenu {
 }
 
 .products_price {
+  display: block;
   font-size: 18px;
   font-family: Roboto;
   font-weight: 700;
@@ -346,7 +370,7 @@ li:hover .submenu {
 }
 
 .product_new:before {
-  content: "new";
+  content: "";
   position: absolute;
   width: 0;
   height: 0;
@@ -375,7 +399,7 @@ li:hover .submenu {
 }
 
 .product_hot:before {
-  content: "hot";
+  content: "";
   position: absolute;
   width: 0;
   height: 0;
@@ -511,6 +535,7 @@ li:hover .submenu {
 
 .social {
   height: 150px;
+  clear: both;
 }
 
 .twitter,
@@ -712,4 +737,79 @@ li:hover .submenu {
   text-decoration: none;
   color: #faef03;
   padding-left: 19px;
+}
+
+.contact_us {
+  background-color: #f8f8f8;
+  width: 870px;
+  float: left;
+}
+.contact_us .go_back {
+  width: 100%;
+  padding-left: 8px;
+  margin: 18px;
+  height: 9px;
+  color: #989898;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  float: left;
+}
+
+
+
+.contact_us form {
+  margin-left: 11px;
+  margin-right: 23px;
+  margin-top: 74px;
+  width: 350px;
+  padding: 0;
+  display: block;
+  float: left;
+}
+
+.contact_us label {
+  display: block;
+  height: 9px;
+  color: #333;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.contact_us input,
+.contact_us textarea {
+  display: block;
+  width: 100%;
+  height: 27px;
+  margin-top: 10px;
+  margin-bottom: 31px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  padding-left: 18px;
+  box-sizing: border-box;
+}
+
+.contact_us textarea {
+  height: 150px;
+  resize: none;
+  padding-left: 0;
+  box-sizing: border-box;
+}
+
+.contact_us .delimiter {
+  width: 1;
+  height: 330px;
+  opacity: 0.8;
+  background-color: #a7a7a7;
+  margin-top: 140px;
+  float: left;
+}
+
+.contact_us .contact_info {
+  width: 165px;
 }
