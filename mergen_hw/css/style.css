@@ -13,8 +13,8 @@
   margin-bottom: -20px;
 }
 
+.catalog .header,
 .contacts .header {
-  background-image: url(../images/maps.png);
   background-color: #abeafa;
   height: 350px;
   box-sizing: border-box;
@@ -22,6 +22,10 @@
   padding-left: 234px;
   padding-right: 229px;
   margin-bottom: 0;
+}
+
+.contacts .header {
+  background-image: url(../images/maps.png);
 }
 
 .header_top {
@@ -289,12 +293,16 @@ li:hover .submenu {
 
 /*--Products--*/
 
-.products_sets {
+.products_sets,
+.products_catalog {
   background-color: #f8f8f8;
-  margin-top: 2px;
   width: 870px;
   float: left;
   font-size: 0;
+}
+
+.products_sets {
+  margin-top: 2px;
 }
 
 .products {
@@ -304,6 +312,10 @@ li:hover .submenu {
   display: inline-block;
   background-color: #fff;
   padding: 10px;
+}
+
+.catalog .products {
+  margin-bottom: 30px;
 }
 
 .products_image {
@@ -538,6 +550,11 @@ li:hover .submenu {
   clear: both;
 }
 
+.catalog .items {
+  float: left;
+  margin-bottom: 100px;
+}
+
 .twitter,
 .pinterest,
 .facebook {
@@ -759,7 +776,8 @@ li:hover .submenu {
   width: 870px;
   float: left;
 }
-.contact_us .go_back {
+
+.go_back {
   width: 100%;
   padding-left: 8px;
   margin: 18px;
@@ -769,6 +787,11 @@ li:hover .submenu {
   font-size: 12px;
   font-weight: 400;
   float: left;
+}
+
+.catalog .go_back {
+  margin-top: 38px;
+  margin-bottom: 101px;
 }
 
 .contact_us form {
