@@ -14,6 +14,7 @@
 }
 
 .catalog .header,
+.item .header,
 .contacts .header {
   background-color: #abeafa;
   height: 350px;
@@ -165,6 +166,11 @@
   float: left;
 }
 
+.item .sidebar {
+  height: 1949px;
+  position: relative;
+}
+
 .menu {
   background-color: #26d2fc;
   width: 270px;
@@ -173,6 +179,10 @@
   list-style-type: none;
   padding: 0;
   box-sizing: border-box;
+}
+
+.contacts .menu {
+  margin-bottom: 42px;
 }
 
 .menu>li {
@@ -217,6 +227,10 @@
   color: #000;
   font-size: 14px;
   font-weight: 900;
+}
+
+.menu .unactive {
+  color: #333;
 }
 
 .menu>li:hover {
@@ -289,10 +303,18 @@ li:hover .submenu {
   text-transform: uppercase;
   padding-left: 142px;
   padding-top: 129px;
+  box-sizing: border-box;
+}
+
+.item .announcement {
+  position: absolute;
+  width: 270px;
+  bottom: 0%;
 }
 
 /*--Products--*/
 
+.item_body,
 .products_sets,
 .products_catalog {
   background-color: #f8f8f8;
@@ -314,8 +336,8 @@ li:hover .submenu {
   padding: 10px;
 }
 
-.catalog .products {
-  margin-bottom: 30px;
+.catalog .products:nth-of-type(n + 4) {
+  margin-top: 30px;
 }
 
 .products_image {
@@ -336,7 +358,7 @@ li:hover .submenu {
   line-height: 18px;
   float: left;
   width: 63%;
-  height: 100%;
+  height: 10%;
   color: #333;
   padding-top: 20px;
 }
@@ -356,6 +378,7 @@ li:hover .submenu {
   text-align: right;
 }
 
+.item_price:before,
 .products_price:before,
 .products_discount:before {
   content: "€.";
@@ -550,9 +573,21 @@ li:hover .submenu {
   clear: both;
 }
 
-.catalog .items {
+.contacts .social {
+  padding-top: 123px;
+}
+
+.catalog .social {
+  padding-top: 132px;
+}
+
+.item .social {
+  padding-top: 83px;
+}
+
+.catalog .catalog_items {
   float: left;
-  margin-bottom: 100px;
+  padding-top: 78px;
 }
 
 .twitter,
@@ -780,8 +815,8 @@ li:hover .submenu {
 .go_back {
   width: 100%;
   padding-left: 8px;
-  margin: 18px;
-  height: 9px;
+  margin: 12px;
+  height: 21px;
   color: #989898;
   font-family: Roboto;
   font-size: 12px;
@@ -789,9 +824,30 @@ li:hover .submenu {
   float: left;
 }
 
+.go_back :last-child {
+  background-color: #faef03;
+}
+
+.go_back a {
+  display: inline-block;
+  margin: 7px;
+  padding: 4px;
+  color: #989898;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.item .go_back,
 .catalog .go_back {
+  padding-left: 0px;
+  margin-left: 6px;
   margin-top: 38px;
-  margin-bottom: 101px;
+  margin-bottom: 20px;
+}
+
+.item .go_back {
+  margin-bottom: 51px;
 }
 
 .contact_us form {
@@ -834,6 +890,7 @@ li:hover .submenu {
   height: 150px;
   resize: none;
   padding-left: 0;
+  margin-bottom: 32px;
   box-sizing: border-box;
 }
 
@@ -853,17 +910,25 @@ li:hover .submenu {
   font-weight: 400;
   line-height: 14px;
   float: left;
-  width: 205px;
-  margin-top: 128px;
+  width: 300px;
+  margin-top: 83px;
   margin-left: 28px;
 }
 
 .contact_us h2 {
   color: #353535;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 14px;
 }
 
 .contact_marker {
-  height: 27px;
+  color: #777;
+  width: 179px;
+}
+
+.contact_explanation {
+  width: 165px;
 }
  
 .contact_us img {
@@ -875,8 +940,7 @@ li:hover .submenu {
 .contact_us .contact_email a {
   color: #333;
   font-size: 16px;
-  line-height: 16px;
-  margin-top: 20px;
+  line-height: 21px;
 }
 
 .contact_us .contact_tel a {
@@ -886,5 +950,176 @@ li:hover .submenu {
 
 .contact_us .contact_questions {
   color: #333;
+  font-family: Roboto;
   font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  margin-left: 7px;
+}
+
+.contact_us .brand div {
+  width: 20%;
+}
+
+.item_images {
+  float: left;
+}
+
+.big_image {
+  display: block;
+  width: 374px;
+  height: 374px;
+  background-color: #eaeaea;
+  border: 2px solid #eee;
+  box-sizing: border-box;
+}
+
+.small_images {
+  padding-left: 38px;
+  padding-right: 36px;
+  padding-top: 22px;
+  padding-bottom: 42px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.small_images img {
+  display: inline-block;
+  width: 70px;
+  height: 110px;
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: #eaeaea;
+}
+
+.small_images img:last-child {
+  background-color: #fff;
+}
+
+.item_overview {
+  float: left;
+  font-family: Roboto;
+  padding-left: 43px;
+
+}
+
+.item_overview h2,
+.item_overview h3 {
+  color: #353535;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 53px;
+}
+
+.item_overview h3 {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 0;
+}
+
+.item_overview .item_price {
+  color: #111;
+  font-size: 22px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+hr {
+  width: 390px;
+  height: 1px;
+  opacity: 0.1;
+  background-color: #333;
+}
+
+.item_overview p {
+  color: #707070;
+  width: 438px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.add_to_cart {
+  display: block;
+  margin-left: 141px;
+  margin-top: 20px;
+  width: 130px;
+  height: 48px;
+  background-color: #fb4d01;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 48px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.item_description {
+  float: left;
+}
+
+.item_description div {
+  width: 100%;
+  padding-top: 12px;
+  padding-right: 11px;
+  padding-bottom: 9px;
+  padding-left: 13px;
+  box-sizing: border-box;
+  border-color: #d6d4d4;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.item_description h2 {
+  color: #333;
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 35px;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  width: 160px;
+  height: 35px;
+  margin: 0;
+  background-color: #26d2fc;
+}
+
+.item_description p {
+  color: grey;
+  font-family: Verdana;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+.you_migth_also_like,
+.recently_viewed {
+  float: left;
+  margin-top: 87px;
+}
+
+.you_migth_also_like {
+  margin-top: 77px;
+}
+
+.you_migth_also_like h2,
+.recently_viewed h2 {
+  height: 80px;
+  margin: 0;
+  box-sizing: border-box;
+  vertical-align: middle;
+  line-height: 80px;
+  padding-left: 25px;
+  color: #333;
+  font-family: Raleway;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
